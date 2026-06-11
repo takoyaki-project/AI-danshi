@@ -4,4 +4,5 @@ AI男子のイラストをまとめるリポジトリです。
 
 ## 📸 キャラクターギャラリー
 
-ここに画像を並べていくよ！
+### 🧑‍💻 ChatGPTくん
+![chatgpt_side](./ai_danshi_image/chatgpt_side.png)
