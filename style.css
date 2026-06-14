@@ -573,22 +573,29 @@ body {
   opacity: 1;
 }
 
-/* クレジット画面：最初は場所を取らない。表示時だけ全画面黒 */
 .ending-credit {
   position: absolute;
   inset: 0;
+
+  /* クレジット画面全体を黒 */
   background: #000;
   width: 100%;
   height: 100dvh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
+
+  /* 文字とボタンを画面下へ */
+  justify-content: flex-end;
+
+  gap: 10px;
+
   opacity: 0;
   pointer-events: none;
   transition: opacity 1.2s ease;
-  padding: 28px 40px;
+
+  padding: 28px 20px 36px;
   box-sizing: border-box;
 }
 
