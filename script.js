@@ -497,24 +497,7 @@ async function runOpening() {
 
   await delay(800);
 
-  await showScene("scene3");
-  await delay(200);
-
-  document.querySelectorAll(".five-grid .member").forEach((member, i) => {
-    setTimeout(() => {
-      member.classList.add("shown");
-    }, i * 800);
-  });
-
-  await delay(5000);
-
-  const scene3 = document.getElementById("scene3");
-  if (scene3) {
-    scene3.style.opacity = "0";
-  }
-
-  await delay(800);
-
+  
   await showScene("scene4");
   await delay(200);
 
