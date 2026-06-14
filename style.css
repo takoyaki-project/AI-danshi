@@ -247,11 +247,7 @@ body {
   transform: translateY(0);
 }
 
-.name-item[data-name="Gemini"].shown,
-.name-item[data-name="Claude"].shown,
-.name-item[data-name="Copilot"].shown,
-.name-item[data-name="ClaudeCode"].shown,
-.name-item[data-name="Canva"].shown {
+.name-item.shown {
   color: #3f3446;
 }
 
@@ -363,7 +359,15 @@ body {
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(255, 93, 170, .35);
 }
-
+.disclaimer {
+  width: 88%;
+  max-width: 340px;
+  margin: 0;
+  color: rgba(80, 60, 90, 0.72);
+  font-size: 11px;
+  line-height: 1.6;
+  text-align: center;
+}
 .character {
   position: absolute;
   inset: 0;
