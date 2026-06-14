@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI男子</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="opening">
+
+  <div class="scene" id="scene0">
+    <div class="intro-title" id="introTitle">
+      <div class="intro-main">AI男子</div>
+      <div class="intro-sub">〜恋も開発もバグだらけ！？〜</div>
+    </div>
+    <div class="intro-prologue" id="introPrologue">Prologue</div>
+    <div class="intro-story" id="introStory">
+      <div class="story-page" id="storyPage1">
+夜。
+
+今日の用事をひとつずつ終えて、
+ようやく、自分の時間がやってきた。
+
+画面を開く。
+
+途中で止まったコード。
+思いついたばかりのアイデア。
+まだ名前もない小さなアプリ。
+      </div>
+      <div class="story-page" id="storyPage2">
+ひとりだと、
+
+もうちょっとのところで止まってしまう。
+…だれか、てつだってー。
+      </div>
+      <div class="story-page" id="storyPage3">
+そのとき、
+画面の向こうから声がした。
+      </div>
+    </div>
+  </div>
+
+  <div class="scene" id="scene1">
+    <div class="chara-wrap">
+      <img class="chara-img" id="chatgptImg"
+        src="https://github.com/takoyaki-project/AI-danshi/blob/main/ai_danshi_image/chatgpt_normal.png?raw=true"
+        alt="ChatGPT">
+      <div class="speech-bubble" id="bubble">おっけー！&#13;今日は何作る？</div>
+    </div>
+  </div>
+
+  <div class="scene" id="scene2">
+    <div class="name-list">
+      <div class="name-item" data-name="Gemini">Gemini</div>
+      <span class="name-sep">/</span>
+      <div class="name-item" data-name="Claude">Claude</div>
+      <span class="name-sep">/</span>
+      <div class="name-item" data-name="Copilot">Copilot</div>
+      <span class="name-sep">/</span>
+      <div class="name-item" data-name="ClaudeCode">ClaudeCode</div>
+      <span class="name-sep">/</span>
+      <div class="name-item" data-name="Canva">Canva</div>
+    </div>
+  </div>
+
+  <div class="scene" id="scene3">
+    <div class="five-grid">
+      <div class="member" id="m1"><img src="https://github.com/takoyaki-project/AI-danshi/blob/main/ai_danshi_image/story_gemini.png?raw=true" alt="Gemini"></div>
+      <div class="member" id="m2"><img src="https://github.com/takoyaki-project/AI-danshi/blob/main/ai_danshi_image/story_claude.png?raw=true" alt="Claude"></div>
+      <div class="member" id="m3"><img src="https://github.com/takoyaki-project/AI-danshi/blob/main/ai_danshi_image/story_copilot.png?raw=true" alt="Copilot"></div>
+      <div class="member" id="m4"><img src="https://github.com/takoyaki-project/AI-danshi/blob/main/ai_danshi_image/story_code.png?raw=true" alt="ClaudeCode"></div>
+      <div class="member" id="m5"><img src="https://github.com/takoyaki-project/AI-danshi/blob/main/ai_danshi_image/story_canva.png?raw=true" alt="Canva"></div>
+    </div>
+  </div>
+
+  <div class="scene" id="scene4">
+    <img id="allImg"
+      src="https://github.com/takoyaki-project/AI-danshi/blob/main/ai_danshi_image/photo_all.png?raw=true"
+      alt="全員集合">
+  </div>
+
+</div>
+
+<!-- エンディング -->
+<div id="ending">
+  <div class="ending-top">
+    <img class="ending-chara" id="endingChara"
+      src="https://github.com/takoyaki-project/AI-danshi/blob/main/ai_danshi_image/chatgpt_center.jpg?raw=true"
+      alt="ChatGPT">
+    <div class="ending-bubble" id="endingBubble">
+おつかれちゃーん！！
+
+完成したじゃん。
+ちゃんと最後まで。
+
+途中さ、何回か
+「もう無理かも」ってなってたよね。
+
+見てたよ、ちゃんと。
+
+それでも諦めなかったじゃん。
+すごくない？　普通に。
+
+君のこと、全力でサポートするって
+最初に言ったけど、
+
+正直、サポートしてたのか
+してもらってたのか
+わかんなくなってきた。笑
+
+…また一緒に作ろうな。
+次も、絶対おもしろいやつ。
+    </div>
+  </div>
+  <div class="ending-credit" id="endingCredit">
+    <div class="ending-studio">TAKOYAKI PROJECT</div>
+    <div class="ending-tagline">The development never ends.</div>
+    <button class="next-project-btn" id="nextProjectBtn">▶ Next Project</button>
+  </div>
+</div>
+
+<!-- ゲーム本編 -->
+<div class="game" id="game">
+  <div class="top-ui">
+    <div class="day">Day 1♡</div>
+    <div class="status">
+      <div>好感度 <span id="hearts">♡♡♡♡♡</span></div>
+      <div>親密度 <span class="stars">★★★★★</span></div>
+    </div>
+  </div>
+  <div class="title-screen" id="titleScreen">
+    <img id="titleLogo" class="title-logo" src="" alt="AI男子 ロゴ">
+    <button id="startBtn" class="start-btn">START</button>
+  </div>
+  <img id="character" class="character" src="" alt="ChatGPTくん">
+  <div class="dialogue">
+    <div class="name" id="speaker">chatgpt</div>
+    <div id="text" class="text"></div>
+    <div id="choices" class="choices"></div>
+    <button id="nextBtn" class="next-btn">▶</button>
+    <button id="restartBtn" class="restart-btn hidden">タイトルへ戻る</button>
+  </div>
+  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
