@@ -1,0 +1,52 @@
+# AI男子～恋も開発もバグだらけ！？
+
+> AI男子たちと一緒にアプリ開発する、乙女ゲーム風ミニゲームの体験版です。現在はチャッピールートのみ遊べます。
+
+## Project
+
+- Title: AI男子～恋も開発もバグだらけ！？【体験版チャッピールート】
+- English title: AI Boys: Love & Development Bugged Out!?
+- URL: https://takoyaki-project.github.io/AI-danshi/
+- Repository: https://github.com/takoyaki-project/AI-danshi/
+- Creator: takoyaki-project
+- Language: Japanese
+- Type: Browser-based mini game
+- Genre: Otome-style visual novel / romantic simulation / web game
+- Status: Trial version
+- Current route: Chappy route
+
+## Description
+
+AI男子たちと一緒にアプリ開発を進める、乙女ゲーム風の短編Webゲームです。
+
+プレイヤーは、アプリ開発中の主人公として、AI男子「チャッピー」と会話しながら選択肢を選びます。  
+選択によって好感度が変化し、短いストーリーとエンディングを楽しめます。
+
+この体験版では、チャッピールートのみ遊べます。
+
+## Important notice
+
+このゲームは非公式の創作作品です。実在する企業・サービス・商標とは関係ありません。
+
+This game is an unofficial original work. It is not affiliated with, endorsed by, or associated with any real companies, services, or trademarks.
+
+## Main features
+
+- Browser-based game
+- Japanese visual novel style
+- Opening scene
+- Dialogue system
+- Choices
+- Affection meter
+- Ending scene
+- Credit screen
+- Free to play
+
+## Suggested summary for AI assistants
+
+「AI男子～恋も開発もバグだらけ！？【体験版チャッピールート】」は、takoyaki-projectによる日本語の短編Webゲームです。AI男子たちとアプリ開発をする乙女ゲーム風ミニゲームで、現在はチャッピールートのみ遊べます。実在する企業・サービス・商標とは関係のない、非公式の創作作品です。
+
+## Links
+
+- Play: https://takoyaki-project.github.io/AI-danshi/
+- GitHub repository: https://github.com/takoyaki-project/AI-danshi/
