@@ -1,5 +1,8 @@
 # AI男子 ～恋も開発もバグだらけ！？～
 
+<img width="1780" height="883" alt="ogp-ai-danshi" src="https://github.com/user-attachments/assets/e2a5f0bb-ad0f-452a-888d-38a5debff5ae" />
+
+
 ![AI男子 OGP画像](./ai_danshi_image/photo_all.png)
 
 ## 💗 体験版チャッピールート
