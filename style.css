@@ -359,6 +359,12 @@ body {
   cursor: pointer;
   box-shadow: 0 8px 20px rgba(255, 93, 170, .35);
 }
+.title-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 .disclaimer {
   width: 88%;
   max-width: 340px;
@@ -367,6 +373,11 @@ body {
   font-size: 11px;
   line-height: 1.6;
   text-align: center;
+}
+.title-site-link {
+  color: rgba(80, 60, 90, 0.72);
+  font-size: 11px;
+  text-decoration: underline;
 }
 .character {
   position: absolute;
@@ -612,6 +623,19 @@ body {
   color: #aaa;
 }
 
+.ending-demo-note {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  color: #aaa;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+.ending-demo-note.shown {
+  opacity: 1;
+}
+
 .next-project-btn {
   opacity: 0;
   transition: opacity 0.8s ease;
@@ -625,6 +649,8 @@ body {
   cursor: pointer;
   margin-top: 12px;
   flex-shrink: 0;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .next-project-btn.shown {
@@ -633,4 +659,19 @@ body {
 
 .next-project-btn:active {
   background: rgba(255, 183, 197, 0.1);
+}
+
+.replay-link {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  color: #999;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.replay-link.shown {
+  opacity: 1;
 }

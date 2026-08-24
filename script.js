@@ -291,6 +291,8 @@ const restartBtn = document.getElementById("restartBtn");
 const heartsEl = document.getElementById("hearts");
 const titleLogo = document.getElementById("titleLogo");
 const nextProjectBtn = document.getElementById("nextProjectBtn");
+const endingDemoNote = document.getElementById("endingDemoNote");
+const replayLink = document.getElementById("replayLink");
 
 if (titleLogo) {
   titleLogo.src = assets.logo;
@@ -605,7 +607,9 @@ async function runEnding() {
 
   await delay(1600);
 
+  endingDemoNote?.classList.add("shown");
   nextProjectBtn?.classList.add("shown");
+  replayLink?.classList.add("shown");
 }
 
 function resetGameToTitle() {
@@ -689,47 +693,6 @@ if (nextBtn) {
 
 if (restartBtn) {
   restartBtn.addEventListener("click", resetGameToTitle);
-}
-
-if (nextProjectBtn) {
-  nextProjectBtn.addEventListener("click", () => {
-    const endingScreen = document.getElementById("ending");
-    const endingCredit = document.getElementById("endingCredit");
-    const endingChara = document.getElementById("endingChara");
-    const endingBubble = document.getElementById("endingBubble");
-
-    if (!endingScreen) return;
-
-    endingScreen.style.transition = "opacity 0.8s ease";
-    endingScreen.style.opacity = "0";
-
-    setTimeout(() => {
-      endingScreen.classList.remove("active");
-      endingScreen.style.opacity = "";
-      endingScreen.style.transition = "";
-
-      endingCredit?.classList.remove("shown");
-      nextProjectBtn?.classList.remove("shown");
-      endingChara?.classList.remove("shown");
-      endingBubble?.classList.remove("shown");
-
-      if (endingChara) {
-        endingChara.style.opacity = "";
-        endingChara.style.transition = "";
-      }
-
-      if (endingBubble) {
-        endingBubble.style.opacity = "";
-        endingBubble.style.transition = "";
-      }
-
-      if (game) {
-        game.style.display = "block";
-      }
-
-      resetGameToTitle();
-    }, 800);
-  });
 }
 
 setFace("normal");
